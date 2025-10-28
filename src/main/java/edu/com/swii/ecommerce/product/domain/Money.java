@@ -1,6 +1,7 @@
 package edu.com.swii.ecommerce.product.domain;
 
 import edu.com.swii.ecommerce.shared.domain.ValueObject;
+
 import java.math.BigDecimal;
 import java.util.Objects;
 
