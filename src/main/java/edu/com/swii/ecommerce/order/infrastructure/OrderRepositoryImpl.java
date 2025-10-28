@@ -60,7 +60,7 @@ public class OrderRepositoryImpl implements OrderRepository {
                 .map(itemEntity -> new OrderItem(
                         ProductId.of(itemEntity.getProductId()),
                         itemEntity.getProductName(),
-                        new Money(itemEntity.getUnitPrice(), itemEntity.getCurrency()),
+                        Money.of(itemEntity.getUnitPrice(), itemEntity.getCurrency()),
                         itemEntity.getQuantity()
                 ))
                 .collect(Collectors.toList());

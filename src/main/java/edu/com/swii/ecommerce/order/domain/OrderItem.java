@@ -48,3 +48,4 @@ public class OrderItem extends ValueObject {
     public int hashCode() {
         return Objects.hash(productId, productName, unitPrice, quantity);
     }
+}

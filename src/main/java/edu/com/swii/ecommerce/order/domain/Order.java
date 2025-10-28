@@ -53,7 +53,7 @@ public class Order extends AggregateRoot<OrderId> {
     public Money getTotalAmount() {
         return items.stream()
                 .map(OrderItem::getTotalPrice)
-                .reduce(new Money(BigDecimal.ZERO), Money::add);
+                .reduce(Money.usd(BigDecimal.ZERO), Money::add);
     }
 
     // Getters

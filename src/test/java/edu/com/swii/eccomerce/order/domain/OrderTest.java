@@ -1,6 +1,9 @@
 package edu.com.swii.eccomerce.order.domain;
 
 import edu.com.swii.ecommerce.customer.domain.CustomerId;
+import edu.com.swii.ecommerce.order.domain.Order;
+import edu.com.swii.ecommerce.order.domain.OrderItem;
+import edu.com.swii.ecommerce.order.domain.OrderStatus;
 import edu.com.swii.ecommerce.product.domain.ProductId;
 import edu.com.swii.ecommerce.product.domain.Money;
 import org.junit.jupiter.api.Test;

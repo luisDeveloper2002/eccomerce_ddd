@@ -3,8 +3,12 @@ package edu.com.swii.ecommerce.web;
 import edu.com.swii.ecommerce.order.application.CreateOrderUseCase;
 import edu.com.swii.ecommerce.order.application.dto.CreateOrderRequest;
 import edu.com.swii.ecommerce.order.application.dto.OrderResponse;
+import edu.com.swii.ecommerce.order.domain.OrderRepository;
 import edu.com.swii.ecommerce.product.domain.*;
 import edu.com.swii.ecommerce.customer.domain.CustomerId;
+import edu.com.swii.ecommerce.order.domain.Order;
+import edu.com.swii.ecommerce.order.domain.OrderId;
+
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
