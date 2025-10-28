@@ -1,0 +1,11 @@
+package edu.com.swii.ecommerce.order.domain;
+
+import edu.com.swii.ecommerce.customer.domain.CustomerId;
+import java.util.Optional;
+import java.util.List;
+
+public interface OrderRepository {
+    Order save(Order order);
+    Optional<Order> findById(OrderId id);
+    List<Order> findByCustomerId(CustomerId customerId);
+}
